@@ -55,3 +55,20 @@ plugins:
 #   - vendor/ruby/
 domain: oajen.github.io
 url: https://oajen.github.io
+permalink: pretty
+
+collections:
+  portfolio_items:
+    output: true
+    permalink: /portfolio/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "portfolio_items"
+    values:
+      layout: "portfolio_item"
+  - scope:
+      path: "images"
+    values:
+      image: true

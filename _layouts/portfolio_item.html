@@ -1,0 +1,24 @@
+---
+layout: base
+---
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-two-thirds portfolio-images">
+        <img src="/images/{{page.directory}}/cover.jpg" alt="{{page.name}}" />
+        {{ content }}
+        {% assign image_files = site.static_files | where: "image", true %}
+        {% for i in image_files %}
+          {% if i.path contains page.directory %}
+            {% unless i.path contains "cover" %}
+              <img src="{{i.path}}" alt="{{page.name}}" />
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="column">
+        <h1 class="is-size-3 portfolioitemtitle">{{ page.name }}</h1>
+      </div>
+    </div>
+  </div>
+</section>

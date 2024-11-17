@@ -1,5 +1,5 @@
-body {
-  height: 100vh;
+html {
+  background-color: white;
 }
 
 .logo {
@@ -45,4 +45,12 @@ nav a.active {
 
 .content h1 {
   color: #222;
+}
+
+.portfolioitemtitle {
+  color: #222;
+}
+
+.portfolio-images img {
+  padding: 20px 0;
 }
