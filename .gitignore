@@ -1,5 +1,9 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,vim
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,vim
+Gemfile.lock
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 
 ### macOS ###
 # General
@@ -54,5 +58,3 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
-
-# End of https://www.toptal.com/developers/gitignore/api/macos,vim
